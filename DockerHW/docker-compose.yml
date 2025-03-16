@@ -1,4 +1,11 @@
-version: '3'
+version: "3"
 
 services:
   web:
+    build: ./web  # 使用官方的 Nginx 映像作為 Web 服務
+    ports:
+      - "5000:5000"  # 映射容器的 80 端口到主機的 80 端口
+   
+
+
+
